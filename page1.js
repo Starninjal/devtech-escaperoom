@@ -13,6 +13,8 @@ setTimeout(() => {
 setTimeout(() => {
     document.getElementById("text4").innerText = "VOCÊ VAI UTILIZAR!!!"
 }, 4600);
+
+
 //setInterval(binToText("text2", "CHEIO DE INSETOS! EU TE CONTRATEI PARA"), 1000);
 //setInterval(binToText("text3", "ELIMINÁ-LOS. AGORA ME DIGA QUE FERRAMENTA"), 1000);
 //setInterval(binToText("text4", "VOCÊ VAI UTILIZAR!!!"), 1000);

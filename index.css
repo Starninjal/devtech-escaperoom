@@ -44,7 +44,7 @@ body{
     border: 2px solid white;
 
     margin: 0 auto;
-    height: 145px;
+    height: 115px;
     width: 450px;
     padding-top: 20px;
 
@@ -76,3 +76,35 @@ body{
  
   transform: scale(1.125);
 }
+
+@media only screen and (max-device-width: 720px) {
+  .container-img {
+    margin-top: 200px;
+  }
+
+  .container-img img {
+    width: 600px;
+  }
+
+  .content {
+    margin-top: 200px;
+    margin-right: 280px;
+    height: 200px;
+    width: 850px;
+  }
+
+  .line-1 {
+    font-size: 28px; 
+  }
+
+  .img-start {
+    margin-top: 200px;
+  }
+
+  .img-start img {
+    width: 600px
+  }
+
+  
+}
+

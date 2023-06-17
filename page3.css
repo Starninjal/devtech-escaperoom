@@ -202,20 +202,21 @@ body{
   }
 
   .button-container-1 a {
-    padding: 45px 85px;
-    font-size: 26px;
+    padding: 4115px 85px;
+    font-size: 16px;
   }
 
   .button-container-1 a {
     margin-top: 50px;
+
   }
   .button-container-2 a {
     margin-top: 50px;
   }
 
   .button-container-2 a {
-    padding: 45px 85px;
-    font-size: 26px;
+    padding: 85px 185px;
+    font-size: 16px;
   }
 
   .button-container a {
@@ -243,6 +244,14 @@ body{
 .button-container a:hover {
   transform: scale(1.3);
   border: 1px solid rgb(122, 121, 122);
+}
+
+.button-container-1 a {
+    padding: 10px 60px;
+}
+
+.button-container-2 a {
+    padding: 10px 60px;
 }
 
 

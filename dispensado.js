@@ -27,6 +27,7 @@ function countClick() {
         if (currentPageNumber !== null) {
             const nextPageNumber = currentPageNumber + 1;
             const nextPageUrl = `page${nextPageNumber}.html`;
+            alert(nextPageUrl)
             window.location.href = nextPageUrl;
         }
     }
