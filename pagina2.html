@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página 2</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    button.clicked {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <button id="botaoVoltar">Voltar</button>
+
+  <script>
+    var botaoVoltar = document.getElementById("botaoVoltar");
+    var contadorCliquesPagina2 = 0;
+
+    botaoVoltar.addEventListener("click", function() {
+      contadorCliquesPagina2++;
+
+      if (contadorCliquesPagina2 <= 3) {
+        botaoVoltar.innerHTML = "Você já selecionou esse botão " + contadorCliquesPagina2 + " vez(es)";
+
+        if (contadorCliquesPagina2 === 3) {
+          botaoVoltar.classList.add("clicked");
+          botaoVoltar.disabled = true;
+        }
+      }
+    });
+  </script>
+</body>
+</html>

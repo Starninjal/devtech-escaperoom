@@ -1,0 +1,48 @@
+body {
+    background-color: #333333
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 150px;
+
+
+}
+
+.container-img img {
+   width: 550px;
+}
+
+.container-button  {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container-button button {
+    font-size: 26px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid black;
+    transition: all 0.3s;
+}
+
+.container-button button:hover {
+    transform: scale(1.2);
+    border: 2px solid #737373;
+}
+@media only screen and (max-device-width: 720px) {
+
+    .container-img  {
+        border: 2px solid blue;
+        top: 10%;
+    }
+    .container-img img {
+        width: 550px;
+    }
+}

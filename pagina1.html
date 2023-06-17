@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página 1</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    button.clicked {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <button id="meuBotao">Clique-me</button>
+
+  <script>
+    var meuBotao = document.getElementById("meuBotao");
+    var contadorCliques = 0;
+
+    meuBotao.addEventListener("click", function() {
+      contadorCliques++;
+
+      if (contadorCliques <= 3) {
+        meuBotao.innerHTML = "Você já selecionou esse botão " + contadorCliques + " vez(es)";
+
+        if (contadorCliques === 3) {
+          meuBotao.classList.add("clicked");
+          meuBotao.disabled = true;
+
+          // Redirecionar para a página 2
+          window.location.href = "pagina2.html";
+        }
+      }
+    });
+  </script>
+</body>
+</html>
