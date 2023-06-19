@@ -43,10 +43,9 @@ body{
 
 
     margin: 0 auto;
-    height: 70px;
+    height: 75px;
     width: 450px;
-    padding-top: 20px;
-
+    padding-top: 9px;
 }
 
 .container-btn {
@@ -57,6 +56,16 @@ body{
     padding-top: 40px;
     margin: 0 auto;
     width: 650px;
+    margin-left: 520px;
+    gap: 52px;
+}
+
+.button-container a{
+    width: 80%;
+}
+
+.button-container-1 a {
+
 }
 
 .f-col {
@@ -91,7 +100,7 @@ body{
   color: whitesmoke;
   border: none;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 16px;
   margin-right: 10px;
   cursor: pointer;
   white-space: nowrap;
@@ -158,8 +167,10 @@ body{
   .content {
     display: block;
     width: 103%;
-    height: 115px;
+    height: 135px;
     margin-top: 100px;
+    padding-top: 19px;
+
   }
 
   .content p {
@@ -181,6 +192,8 @@ body{
     height: 100px;
     margin-top: 200px;
     margin-right: 350px;
+    margin-left: 230px;
+    gap: 0px;
   }
 
   .container-btn a {
@@ -202,9 +215,9 @@ body{
   }
 
   .button-container-1 a {
-    padding: 45px 85px;
+    padding: 50px 85px;
     width: 100%;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .button-container-1 a {
@@ -217,7 +230,7 @@ body{
 
   .button-container-2 a {
     padding: 45px 85px;
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .button-container a {

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+
+    @keyframes blink {
+      0%, 100% { background-color: black; }
+      50% { background-color: white; }
+    }
+    
+    @keyframes text-blink {
+      0%, 90% { color: white; }
+      100% { color: green; }
+    }
+    
+    body {
+      background-color: black;
+      animation: blink 0.1s 2, fade-out 6s 10s forwards;
+      font-family: 'VCR OSD Mono', sans-serif;
+    }
+    
+    .centered-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 2s steps(40) 2s 1 normal;
+    }
+    
+    @keyframes fade-out {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+    
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="centered-text">
+  </div>
+
+  <script>
+    // Atualiza o texto para ser animado como uma máquina de escrever
+    const textContainer = document.querySelector('.centered-text');
+    const text = 'PARABÉNS! VOCÊ GANHOU O GRANDE PRÊMIO, PROCURE NOSSOS ADMINISTRADOS PARA SOLICITAR O PRÊMIO';
+    let index = 0;
+    let blinkAnimation = false;
+
+    function typeWriter() {
+      if (index < text.length) {
+        textContainer.textContent += text.charAt(index);
+        index++;
+
+        // Verifica se o texto está na metade
+        if (index === Math.ceil(text.length / 2)) {
+          // Adiciona a classe de animação ao texto para piscar rapidamente em verde e branco
+          textContainer.style.animation = 'text-blink 0.05s infinite';
+          blinkAnimation = true;
+        }
+
+        // Verifica se o texto terminou de ser escrito
+        if (index === text.length) {
+          // Define um tempo para o texto desaparecer após a animação de piscar
+          setTimeout(() => {
+            if (blinkAnimation) {
+              // Remove a classe de animação de piscar rapidamente
+              textContainer.style.animation = 'none';
+              // Define a cor verde para o texto antes de desaparecer
+              textContainer.style.color = 'green';
+              // Define um tempo menor para o texto desaparecer rapidamente
+              setTimeout(() => {
+                textContainer.style.display = 'none';
+                // Redireciona para outra página HTML
+                window.location.href = 'storypage3-1.html';
+              }, 500); // Tempo em milissegundos antes do texto desaparecer (0,5 segundos neste caso)
+            }
+          }, 4000); // Tempo em milissegundos antes de iniciar a animação de piscar (4 segundos neste caso)
+        } else {
+          setTimeout(typeWriter, 100);
+        }
+      }
+    }
+
+    // Inicia a animação de digitação quando a página é carregada
+    window.addEventListener('load', typeWriter);
+  </script>
+</body>
+</html>

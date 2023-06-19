@@ -28,8 +28,18 @@ function countClick() {
             const nextPageNumber = currentPageNumber + 1;
             const nextPageUrl = `page${nextPageNumber}.html`;
             alert(nextPageUrl)
-            window.location.href = nextPageUrl;
-        }
+            if(nextPageUrl == 'page9.html') {
+                window.location.href = 'storypage2-1.html'
+            } else if(nextPageUrl == 'page5.html') {
+                window.location.href = 'storypage1.html'
+            } else if(nextPageUrl == 'page17.html'){
+                window.location.href = 'pagewin.html'
+            } else {
+                window.location.href = nextPageUrl;
+            }
+            
+            
+        } 
     }
 
 

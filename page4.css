@@ -57,6 +57,11 @@ body{
     padding-top: 40px;
     margin: 0 auto;
     width: 650px;
+    margin-left: 610px;
+}
+
+.button-container-1 a{
+    width: 50%;
 }
 
 .f-col {
@@ -91,7 +96,7 @@ body{
   color: whitesmoke;
   border: none;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 16px;
   margin-right: 10px;
   cursor: pointer;
   white-space: nowrap;
@@ -181,6 +186,7 @@ body{
     height: 100px;
     margin-top: 200px;
     margin-right: 350px;
+    margin-left: 230px;
   }
 
   .container-btn a {
@@ -202,7 +208,7 @@ body{
   }
 
   .button-container-1 a {
-    padding: 45px 85px;
+    padding: 50px 85px;
     width: 100%;
     font-size: 24px;
   }
