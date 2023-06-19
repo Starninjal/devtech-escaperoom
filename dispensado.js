@@ -27,7 +27,6 @@ function countClick() {
         if (currentPageNumber !== null) {
             const nextPageNumber = currentPageNumber + 1;
             const nextPageUrl = `page${nextPageNumber}.html`;
-            alert(nextPageUrl)
             if(nextPageUrl == 'page9.html') {
                 window.location.href = 'storypage2-1.html'
             } else if(nextPageUrl == 'page5.html') {

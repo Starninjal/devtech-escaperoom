@@ -1,5 +1,5 @@
 var intervalo = setTimeout(() => {
-    document.getElementById("text1").innerText = "VAMOS AO QUE INTERESSA, ESSE ATAQUE NOS";
+    document.getElementById("text1").innerText = "VAMOS AO QUE INTERESSA, UM ATAQUE NOS";
 }, 4000);
 
 var intervalo = setTimeout(() => {
