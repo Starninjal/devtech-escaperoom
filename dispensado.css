@@ -39,7 +39,6 @@ body {
 @media only screen and (max-device-width: 720px) {
 
     .container-img  {
-        border: 2px solid blue;
         top: 10%;
     }
     .container-img img {
